@@ -89,18 +89,18 @@ const Dashboard = () => {
   } catch (error) {
     console.error("Chat Error:", error);
 
-//     setMessages((prev) =>
-//       prev.map((msg) =>
-//         msg.id === tempId
-//           ? {
-//               ...msg,
-//               content: "⚠️ Failed to generate response.",
-//             }
-//           : msg
-//       )
-//     );
-//   }
-// };
+    setMessages((prev) =>
+      prev.map((msg) =>
+        msg.id === tempId
+          ? {
+              ...msg,
+              content: "⚠️ Failed to generate response.",
+            }
+          : msg
+      )
+    );
+  }
+};
 
   return (
     <div className="flex h-screen">
